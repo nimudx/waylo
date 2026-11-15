@@ -1,0 +1,11 @@
+[package]
+name = "waylo-core"
+description = "Waylo logic without a UI: Hyprland, monitors, workspaces and configuration"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+ddc-hi.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+toml.workspace = true

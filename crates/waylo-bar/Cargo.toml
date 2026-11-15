@@ -1,0 +1,15 @@
+[package]
+name = "waylo-bar"
+description = "Waylo top bar: one per monitor"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "waylo-bar"
+path = "src/main.rs"
+
+[dependencies]
+waylo-core.workspace = true
+waylo-render.workspace = true
+waylo-shell.workspace = true
+chrono.workspace = true

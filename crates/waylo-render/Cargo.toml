@@ -1,0 +1,10 @@
+[package]
+name = "waylo-render"
+description = "2D CPU drawing for Waylo: shapes, text and theme. Knows nothing about Wayland"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+ab_glyph.workspace = true
+tiny-skia.workspace = true
+resvg.workspace = true

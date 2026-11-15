@@ -1,0 +1,32 @@
+[workspace]
+resolver = "3"
+members = ["crates/*"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+
+[workspace.dependencies]
+# Internal
+waylo-core = { path = "crates/waylo-core" }
+waylo-render = { path = "crates/waylo-render" }
+waylo-shell = { path = "crates/waylo-shell" }
+
+# External (a single version for the whole workspace)
+ab_glyph = "0.2"
+ddc-hi = "0.4"
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+smithay-client-toolkit = "0.19"
+tiny-skia = "0.11"
+resvg = { version = "0.45", default-features = false }
+toml = "0.8"
+wayland-client = "0.31"
+
+[profile.release]
+lto = "thin"
+strip = true
+codegen-units = 1
+panic = "abort"

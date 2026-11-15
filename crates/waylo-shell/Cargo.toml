@@ -1,0 +1,10 @@
+[package]
+name = "waylo-shell"
+description = "Waylo layer-shell surfaces: window, shared memory and event loop"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+waylo-render.workspace = true
+smithay-client-toolkit.workspace = true
+wayland-client.workspace = true

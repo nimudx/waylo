@@ -1,0 +1,14 @@
+[package]
+name = "waylo-expose"
+description = "Waylo Exposé (F3): window overview. An on-demand process, no daemon"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "waylo-expose"
+path = "src/main.rs"
+
+[dependencies]
+waylo-core.workspace = true
+waylo-render.workspace = true
+waylo-shell.workspace = true

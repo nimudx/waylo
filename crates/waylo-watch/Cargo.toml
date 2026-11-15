@@ -1,0 +1,12 @@
+[package]
+name = "waylo-watch"
+description = "Waylo monitor watcher: when a screen is connected or removed, reapplies layout, workspaces and brightness"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "waylo-watch"
+path = "src/main.rs"
+
+[dependencies]
+waylo-core.workspace = true

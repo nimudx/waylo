@@ -1,0 +1,14 @@
+[package]
+name = "waylo-launch"
+description = "Waylo launcher (Spotlight): application search. An on-demand process, no daemon"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "waylo-launch"
+path = "src/main.rs"
+
+[dependencies]
+waylo-core.workspace = true
+waylo-render.workspace = true
+waylo-shell.workspace = true
